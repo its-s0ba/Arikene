@@ -1,0 +1,41 @@
+Title Screen:
+    - start
+    - quit
+        - (for testing purposes only, please don't use this on your first go around.) skip
+
+Room One
+    - look around
+    - leave
+
+Dark Hallway
+    - look around
+    - continue
+
+Item Room
+    - look around
+    - go left / left
+        - open door
+        - use knife
+        - leave
+    - go straight / straight
+
+Center Room
+    - go left / left
+    - go right / right
+    - go straight / straight
+
+Boss Room
+    - run
+    - taunt beast
+    - hide behind pillar
+    - stab beast
+    - shoot beast
+
+Flooded Corridor
+    - swim
+    - leave
+    - open door
+
+Gem Room
+    - take gemstone
+    - use skull
