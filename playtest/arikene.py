@@ -14,6 +14,7 @@ tester2 = "Claudia Taylor"
 tester3 = "Dan Root"
 tester4 = "Karen Diggs"
 tester5 = "Eli Gibbs"
+helped = "Kris Wasnidge"
 
 # function for testing purposes
 
@@ -75,6 +76,7 @@ def title_screen():
 
 def dead(why):
     print(why, "Good job! You are dead.")
+    time.sleep(20)
     exit(0)
 
 # start function
@@ -326,7 +328,7 @@ def boss_room():
     time.sleep(5)
     print("You are immediately blinded with torch light in each corner of an enormous room, with four very fragile looking pillars. Looking behind you, there are two arrow traps: one on the left, which is the one responsible for the arrow in your leg, and one on the right, which appears to have been fired a long time ago.")
     time.sleep(10)
-    print("You hear a loud serious of noises in front of you, where a large stone gate is sinking into the ground. A large beast emerges from a dark room. A horrifying monster, with the head of a abominable bull, the body of an ape, but five times the normal size of one, arms like frieght trains and fists like wrecking balls, legs like super colossus redwood trees, and a tail of a scorpion. A truly horrifying beast.")
+    print("You hear a loud series of noises in front of you, where a large stone gate is sinking into the ground. A large beast emerges from a dark room. A horrifying monster, with the head of a abominable bull, the body of an ape, but five times the normal size of one, arms like frieght trains and fists like wrecking balls, legs like super colossus redwood trees, and a tail of a scorpion. A truly horrifying beast.")
     time.sleep(18)
     print("It starts toward you. What will you do?")
     beast_taunted = False
@@ -541,7 +543,7 @@ def credits():
     time.sleep(3)
     print("This game was built in a week, involving sleepless nights and a lot of bugged out logic.\n")
     time.sleep(5)
-    print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, and {tester5}!\n")
+    print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, {tester5}, and {helped}!\n")
     time.sleep(8)
     print("I hope you enjoyed!\n")
     time.sleep(3)
