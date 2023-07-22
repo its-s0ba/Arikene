@@ -49,7 +49,7 @@ def title_screen():
 
     """)
     slow_print("Welcome to Arikene.\n")
-    slow_print("What is your name?")
+    slow_print("What is your name?\n")
     player_name = input("> ")
     slow_print("\n")
     slow_print(f"Welcome, {player_name}!\n")
