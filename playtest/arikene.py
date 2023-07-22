@@ -25,6 +25,7 @@ def slow_print(string):
     for x in [*string]:
         print(x, end='', flush=True)
         time.sleep(0.05)
+    print("\n")
 
 # clear function
 
