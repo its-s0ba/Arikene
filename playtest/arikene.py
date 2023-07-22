@@ -25,6 +25,7 @@ def slow_print(string):
     for x in [*string]:
         print(x, end='', flush=True)
         time.sleep(0.05)
+    print("\n")
 
 # clear function
 
@@ -48,12 +49,11 @@ def title_screen():
             \/                    \/     \/     \/ 
 
     """)
-    slow_print("Welcome to Arikene.\n")
+    slow_print("Welcome to Arikene.")
     slow_print("What is your name?")
     player_name = input("> ")
-    slow_print("\n")
-    slow_print(f"Welcome, {player_name}!\n")
-    slow_print("Please type 'start' to play, or 'quit' to exit.\n")
+    slow_print(f"Welcome, {player_name}!")
+    slow_print("Please type 'start' to play, or 'quit' to exit.")
     proper_input = False
 
     while True:
@@ -221,7 +221,7 @@ def item_room():
                     door_opens = " The door swings open!"
                     for i in range(22):
                         slow_print(door_opens[i], end='', flush=1)
-                    slow_print("\nYou walk inside and collect the shotgun. It looks old, and the wood has dry rot, but it looks like it might still fire.")
+                    slow_print("You walk inside and collect the shotgun. It looks old, and the wood has dry rot, but it looks like it might still fire.")
                     slow_print("You check for ammo, opening its break. It has only one shell. Better use it wisely.")
                     has_shotgun = True
                 elif choice == "leave" and not has_shotgun:
@@ -417,16 +417,16 @@ def gem_room():
 def auto_win():
     l337 = "The world around you suddenly freezes, and your surroundings turn into glitchy code raining down from somewhere incomprehensible."
     slow_print(l337)
-    h4x0r = "\nYou start getting dizzy, and you pass ou"
+    h4x0r = "You start getting dizzy, and you pass ou"
     slow_print(h4x0r)
     l337_h4x = "t..."
     slow_print(l337_h4x)
-    r3b007 = "\nRebooting"
+    r3b007 = "Rebooting"
     slow_print(r3b007)
     w4k3_up = ".........."
     slow_print(w4k3_up)
     clear()
-    slow_print("\nYou suddenly come to.")
+    slow_print("You suddenly come to.")
     slow_print("You look down and the gemstone is in your hands, and you're back in your apartment on your homeworld.")
     slow_print("You would ask yourself what the hell happened, but something tells you it was cool and badass so you don't care.")
     slow_print("You Win!")
@@ -437,10 +437,10 @@ def auto_win():
 # Credits
 
 def credits():
-    slow_print("Thank you for playing!\n")
-    slow_print("This game was built in a week, involving sleepless nights and a lot of bugged out logic.\n")
-    slow_print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, and {helped}!\n")
-    slow_print("I hope you enjoyed!\n")
+    slow_print("Thank you for playing!")
+    slow_print("This game was built in a week, involving sleepless nights and a lot of bugged out logic.")
+    slow_print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, and {helped}!")
+    slow_print("I hope you enjoyed!")
     slow_print("- G.D. A.K.A 'S0ba'")
     exit(0)
 
