@@ -13,7 +13,6 @@ tester1 = "Chaz Moore"
 tester2 = "Claudia Taylor"
 tester3 = "Dan Root"
 tester4 = "Karen Diggs"
-tester5 = "Eli Gibbs"
 helped = "Kris Wasnidge"
 
 # function for testing purposes
