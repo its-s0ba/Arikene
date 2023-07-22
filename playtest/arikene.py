@@ -13,7 +13,6 @@ tester1 = "Chaz Moore"
 tester2 = "Claudia Taylor"
 tester3 = "Dan Root"
 tester4 = "Karen Diggs"
-tester5 = "Eli Gibbs"
 helped = "Kris Wasnidge"
 
 # function for testing purposes
@@ -543,7 +542,7 @@ def credits():
     time.sleep(3)
     print("This game was built in a week, involving sleepless nights and a lot of bugged out logic.\n")
     time.sleep(5)
-    print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, {tester5}, and {helped}!\n")
+    print(f"Special thanks to: {tester1}, {tester2}, {tester3}, {tester4}, and {helped}!\n")
     time.sleep(8)
     print("I hope you enjoyed!\n")
     time.sleep(3)
