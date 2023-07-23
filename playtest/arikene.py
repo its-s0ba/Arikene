@@ -5,7 +5,7 @@ import time
 import os
 from os import system, name
 
-# global variables
+# global variables https://prod.liveshare.vsengsaas.visualstudio.com/join?BCF24274D8B80800794341B7DD4C46B28D48
 
 has_shotgun = False
 obtained_key = False
