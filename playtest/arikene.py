@@ -4,6 +4,7 @@ from sys import exit
 import time
 import os
 from os import system, name
+import keyboard
 
 # global variables https://prod.liveshare.vsengsaas.visualstudio.com/join?BCF24274D8B80800794341B7DD4C46B28D48
 
@@ -21,10 +22,14 @@ def test(string):
     slow_print(string, "This is a test slow_print!")
     exit(0)
 
+    
 def slow_print(string):
     for x in [*string]:
         print(x, end='', flush=True)
-        time.sleep(0.05)
+        if keyboard.is_pressed("a"):
+            time.sleep(0.01)
+        else:
+            time.sleep(0.05)
     print("\n")
 
 # clear function
@@ -79,6 +84,12 @@ def dead(why):
 # start function
 
 def start():
+    text_file_name = "start.txt"
+
+    # load text file
+    with open(f'content/{text_file_name}', "r") as file: 
+        line = file.readline()
+
     slow_print("You walk upon the Temple of Arikene...")
     slow_print("The planet itself is a desert with a cream colored sky, with bands of orange and peach. It has no moons, and one high density planetary ring made up of ice and gas.")
     slow_print('It is 1.32x the size of Earth, and is 0.35 AU from its star "Ujothan-387B".')
@@ -446,4 +457,4 @@ def credits():
 
 # Game's official Start Sequence
 
-title_screen()
+#title_screen()
