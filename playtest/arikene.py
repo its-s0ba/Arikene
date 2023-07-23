@@ -129,7 +129,7 @@ def entrance():
         elif choice == "h4ck7h3pl4n37!":
             auto_win()
         else:
-            dead("You sit down, filled with disbelief. You think the task is too daunting. You get up and leave the temple, wandering around the desert planet until you starve.")
+            slow_print("Sorry, that isn't an option here... Please try again.")
 
 # Room 1
 
@@ -166,7 +166,7 @@ def room_one():
         slow_print("You decide that it's time to move on from this room. You leave into the hallway.")
         dark_hallway()
     else:
-        dead("Hey so remember that tuna sandwich you ate on the ship? It was expired.")
+        slow_print("Sorry, that isn't an option here... Please try again.")
 
 # Dark Hallway
 
@@ -185,7 +185,7 @@ def dark_hallway():
     elif choice == "continue":
         dead("You press on, but feel something snag around your ankles. You trip and find yourself falling a far distance. You hit the ground.")
     else:
-        dead("You slip and fall hitting your head and you bleed out.")
+        slow_print("Sorry, that isn't an option here... Please try again.")
 
 # Item Room
 
@@ -237,7 +237,7 @@ def item_room():
             slow_print("You decide that your time won't be wasted exploring that area. You press on into the next room.")
             center_room()
         else:
-            dead("Ever heard of an aneurysm? Yeah they're real.")
+            slow_print("Sorry, that isn't an option here... Please try again.")
 
 # Center Room
 
@@ -381,7 +381,7 @@ def flooded_corridor():
         slow_print("You climb out of the water and head back the way you came.")
         center_room()
     else:
-        dead("You get tired, and your head dips below the water. You struggle to keep yourself afloat. You never resurface.")
+        slow_print("Sorry, that isn't an option here... Please try again.")
 
 # Gem Room
 
